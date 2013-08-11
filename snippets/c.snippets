@@ -108,3 +108,14 @@ snippet .
 	[${1}]${2}
 snippet un
 	unsigned
+# switch case
+snippet sw
+	switch (${1:i}) {
+		case ${2:0}:
+			${3:/* code */}
+			break;
+		${5}
+		default:
+			${4}
+			break;
+	}
