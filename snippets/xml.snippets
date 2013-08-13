@@ -1,0 +1,26 @@
+snippet target
+	<target name="${1:name}">
+		${2}
+	</target>
+snippet echo
+	<echo message="${1:echo}"/>${2}
+snippet project
+	<project name="${1:project1}" default="${2:build}">
+		${3}
+	</project>
+snippet header
+	<?xml version="1.0" encoding="UTF-8"?>${1}
+snippet <!
+	<!-- ${1:comment} -->${2}
+snippet prop
+	<property name="${1:name}" ${2}/>${3}
+snippet path
+	<path id="${1:id}">
+		${2}
+	</path>${3}
+snippet javac
+	<javac destdir="${1:build}" includeantruntime="${2:false}">
+		<src path="${3:src/main/java}"/>
+		<classpath refid="${4:buildClasspath}"/>
+	</javac>${5}
+
