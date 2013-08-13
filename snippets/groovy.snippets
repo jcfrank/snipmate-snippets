@@ -1,0 +1,78 @@
+snippet cl
+	class ${1:name} {
+	}
+snippet m
+	${1:void} ${2:method}(${3}) ${4:throws }{
+		${5:/* code */}
+	}
+snippet d
+	def ${1:foo}
+snippet pr
+	println ${1}
+snippet im
+	import ${1}
+snippet fun
+	def ${1:foo}(${2}) {
+		${3:/* code */}
+	}
+snippet if
+	if ( ${1} ) {
+		${2:/* code */}
+	}${3}
+snippet ifel
+	if ( ${1} ) {
+		${2:/* code */}
+	} else {
+		${3:/* code */}
+	}${4}
+snippet ifelif
+	if ( ${1} ) {
+		${2:/* code */}
+	} else if (${3} ) {
+		${4:/* code */}
+	} else {
+		${5:...}
+	}
+snippet as
+	assert ${1}
+snippet sw
+	switch ( ${1:...} ) {
+		case ${2:...}:
+			${3:...}
+			break
+
+		default:
+			${4:...}
+			break
+	}
+snippet sw
+	while ( ${1:...} ) {
+		${2:...}
+	}
+snippet for
+	for (${1:...}; ${2:...}; ${3:...}) {
+		${4:...}
+	}
+snippet fori
+	for ( ${1:...} in ${2:...} ) {
+		${3:...}
+	}
+snippet clo
+	def ${1:...} = [ ${2:...}, ${3:...} ]${4}
+snippet each
+	${1:foo}.each() { ${2:bar} -> ${3:...} }${4}
+snippet try
+	try {
+		${1:...}
+	} catch(${2:foo}) {
+		${3:...}
+	}${5}
+snippet tryf
+	try {
+		${1:...}
+	} catch(${2:foo}) {
+		${3:...}
+	} finally {
+		${4:...}
+	}${5}
+
